@@ -45,6 +45,12 @@ advected_interp_method = 'average'
   [../]
 []
 
+[AuxVariables]
+  [./Tf]
+    # type = MooseVariableFVReal
+  [../]
+
+[]
 [FVKernels]
   [./mass]
     type = INSFVMassAdvection # ∇·u = 0
