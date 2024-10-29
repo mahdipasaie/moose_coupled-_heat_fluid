@@ -124,4 +124,10 @@
       source_variable = vel_y
       variable = vt
   [../]
+  [./Ttrans]
+    type = MultiAppGeometricInterpolationTransfer
+    to_multi_app = fluid
+    source_variable = T
+    variable = Tf 
+  [../]
 []
